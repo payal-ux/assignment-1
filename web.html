@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:lightpink;
+            color:black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .styled-paragraph {
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 18px;
+            color: black;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: blue;
+            color: white;
+        }
+
+        table td {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>This page demonstrates various webpage elements</p>
+    </header>
+
+    <section>
+        <div class="styled-paragraph">
+            <p>This is a paragraph which gives inforamtion about this webpage The text is easily readable and stands out from the rest of the content on the page.</p>
+        </div>
+
+        <h2>Key Features of This Page:</h2>
+        <ul>
+            <li>A bold heading and subheading at the top.</li>
+            <li>A stylish paragraph with distinct background.</li>
+            <li>An unordered list to display important points.</li>
+            <li>A form to collect user inputs.</li>
+            <li>A basic table to organize data.</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Basic Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Ankita More</td>
+                <td>28</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Harsh Gupta</td>
+                <td>32</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Viraj Singh</td>
+                <td>22</td>
+                <td>California</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        /* Styling for block-level elements */
+        .block-example {
+            background-color: #f0f8ff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #00aaff;
+        }
+
+        /* Styling for inline-level elements */
+        .inline-example {
+            background-color: #f8f0ff;
+            padding: 5px;
+            border: 1px solid #ff00aa;
+        }
+
+        /* Heading styles */
+        h1 {
+            color: #333;
+        }
+
+        /* Paragraph styles */
+        p {
+            color: #555;
+        }
+
+        /* Styles for inline links */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        /* Hover effect for links */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Inline styling for text elements */
+        i, b {
+            font-weight: bold;
+        }
+
+        .inline-demo {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Block vs Inline Elements</h1>
+
+    <p>
+        This page demonstrates the difference between <b>block-level elements</b> and <b>inline elements</b> in HTML.
+        Block-level elements, like <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code>, take up the full width of their container and start on a new line.
+        Inline elements, such as <code>&lt;a&gt;</code>, <code>&lt;i&gt;</code>, and <code>&lt;b&gt;</code>, only take up as much width as their content and do not force new lines.
+    </p>
+
+    <!-- Block-Level Elements Section -->
+    <div class="block-example">
+        <h2>Block-Level Elements</h2>
+        <!-- <h1> is a block-level element. It takes up the entire width of the container -->
+        <!-- <p> is also a block-level element. It starts on a new line and takes up full width -->
+        <p>This is a block-level paragraph. It takes up the full width of the container and always starts on a new line.</p>
+        <p>Another block-level paragraph follows the same rule and doesn't affect other elements.</p>
+    </div>
+
+    <!-- Inline Elements Section -->
+    <div class="inline-example">
+        <h2>Inline Elements</h2>
+        <!-- <a> is an inline element, which means it does not cause line breaks -->
+        <p>Here is a <a href="https://www.example.com" target="_blank">link</a> inside a paragraph. Inline elements do not start a new line.</p>
+        <!-- <i> is an inline element. It affects the content within it but doesn't cause line breaks -->
+        <p>This is <i>italicized text</i> using the <code>&lt;i&gt;</code> tag. It stays within the same flow as the surrounding text.</p>
+        <!-- <b> is another inline element that makes text bold without starting a new line -->
+        <p>This is a <b>bold text</b> example using the <code>&lt;b&gt;</code> tag. It also stays within the same line as the surrounding content.</p>
+    </div>
+
+</body>
+</html>
